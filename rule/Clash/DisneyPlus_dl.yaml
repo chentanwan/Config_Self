@@ -2,7 +2,7 @@
 # ONLY log in
 payload:
   - DOMAIN-SUFFIX,sdk.iad-03.braze.com
-  - DOMAIN,appconfigs.disney-plus.net
+  #- DOMAIN,appconfigs.disney-plus.net
   - DOMAIN,bam-sak-configs.bamgrid.com
   - DOMAIN-SUFFIX,disneyplus.com
   - DOMAIN-SUFFIX,disney-plus.net
