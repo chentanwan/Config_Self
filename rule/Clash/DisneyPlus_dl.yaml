@@ -1,17 +1,16 @@
 # > Disney Plus
 # ONLY log in
 payload:
-  - DOMAIN,uts-api.itunes.apple.com
-  - DOMAIN,sdk.iad-03.braze.com
+  - DOMAIN-SUFFIX,sdk.iad-03.braze.com
   - DOMAIN,appconfigs.disney-plus.net
-  - DOMAIN-SUFFIX,bam-sak-configs.bamgrid.com
+  - DOMAIN,bam-sak-configs.bamgrid.com
   - DOMAIN-SUFFIX,disneyplus.com
   - DOMAIN-SUFFIX,disney-plus.net
   - DOMAIN-SUFFIX,disneystreaming.com
   - DOMAIN-SUFFIX,dssott.com
   - DOMAIN-SUFFIX,bamgrid.com
   - DOMAIN,disney.my.sentry.io
-  - DOMAIN-SUFFIX,disney.api.edge.bamgrid.com
+  - DOMAIN,disney.api.edge.bamgrid.com
   - DOMAIN,disney.connections.edge.bamgrid.com
   - DOMAIN,disney.content.edge.bamgrid.com
   - DOMAIN,disney.playback.edge.bamgrid.com
