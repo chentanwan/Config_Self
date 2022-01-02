@@ -4,3 +4,4 @@ payload:
   - DOMAIN-SUFFIX,media.dssott.com
   - DOMAIN,prod-ripcut-delivery.disney-plus.net
   - DOMAIN-SUFFIX,cdn.registerdisney.go.com
+  - DOMAIN,appconfigs.disney-plus.net
