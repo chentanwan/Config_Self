@@ -1,6 +1,8 @@
 # > Disney Plus
 # ONLY log in
 payload:
+  - DOMAIN,appconfigs.disney-plus.net
+  - DOMAIN,bam-sak-configs.bamgrid.com
   - DOMAIN-SUFFIX,disneyplus.com
   - DOMAIN-SUFFIX,disney-plus.net
   - DOMAIN-SUFFIX,disneystreaming.com
