@@ -652,7 +652,7 @@ payload:
   - DOMAIN-SUFFIX,ytimg.com
   - DOMAIN-SUFFIX,zukunftswerkstatt.de
   - DOMAIN-SUFFIX,zynamics.com
-  - DOMAIN-KEYWORD,www.google.
+  - DOMAIN-KEYWORD,google
   - IP-CIDR,172.110.32.0/21,no-resolve
   - IP-CIDR,173.194.0.0/16,no-resolve
   - IP-CIDR,216.73.80.0/20,no-resolve
