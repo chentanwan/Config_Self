@@ -69,6 +69,10 @@ proxy-groups:
   type: select
   proxies:
   - 全球直连
+- name: 全球直连
+  type: select
+  proxies:
+    - DIRECT
 - name: Disneyplus
   type: select
   proxies:
@@ -77,6 +81,22 @@ proxy-groups:
   type: select
   proxies:
   -  白丝原生4837_NF&D+
+  use:
+  - maoxiong
+- name: HBO_asia
+  type: select
+  use:
+  - maoxiong
+- name: HBO_usa
+  type: select
+  proxies:
+  - 白丝原生4837_NF&D+
+- name: Netflix
+  type: select
+  proxies:
+  - 节点选择
+  - 绿云_NF&D+
+  - 白丝原生4837_NF&D+
   use:
   - maoxiong
 - name: Google
@@ -104,34 +124,9 @@ proxy-groups:
   - 白丝原生4837_NF&D+
   use:
   - maoxiong
-- name: HBO_asia
-  type: select
-  use:
-  - maoxiong
-- name: HBO_usa
-  type: select
-  proxies:
-  - 白丝原生4837_NF&D+
-- name: Netflix
-  type: select
-  proxies:
-  - 节点选择
-  - 绿云_NF&D+
-  - 白丝原生4837_NF&D+
-  use:
-  - maoxiong
 - name: Telegram
   type: select
   proxies:
-  - 节点选择
-  - 绿云_NF&D+
-  - 白丝原生4837_NF&D+
-  use:
-  - maoxiong
-- name: Global
-  type: select
-  proxies:
-  - 自动选择
   - 节点选择
   - 绿云_NF&D+
   - 白丝原生4837_NF&D+
@@ -154,6 +149,15 @@ proxy-groups:
   type: select
   proxies:
   - 白丝原生4837_NF&D+
+- name: Global
+  type: select
+  proxies:
+  - 自动选择
+  - 节点选择
+  - 绿云_NF&D+
+  - 白丝原生4837_NF&D+
+  use:
+  - maoxiong
 - name: China
   type: select
   proxies:
@@ -163,10 +167,6 @@ proxy-groups:
   - 白丝原生4837_NF&D+
   use:
   - maoxiong
-- name: 全球直连
-  type: select
-  proxies:
-    - DIRECT
 - name: Final
   type: select
   proxies:
@@ -274,7 +274,6 @@ rule-providers:
     interval: 21600
 rules:
 - RULE-SET,Apple,Apple
-- RULE-SET,China,China
 - RULE-SET,Googlevoice,Googlevoice
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Google,Google
@@ -287,6 +286,7 @@ rules:
 - RULE-SET,Telegram,Telegram
 - RULE-SET,PayPal,PayPal
 - RULE-SET,Spotify,Spotify
+- RULE-SET,China,China
 - RULE-SET,Global,Global
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
@@ -295,6 +295,6 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 - IP-CIDR,224.0.0.0/4,DIRECT
 - IP-CIDR,fe80::/10,DIRECT
-- GEOIP,China,全球直连
-- GEOIP,Global,Global
+#- GEOIP,China,全球直连
+#- GEOIP,Global,Global
 - MATCH,Final
