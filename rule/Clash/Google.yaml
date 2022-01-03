@@ -9,6 +9,11 @@
 # IP-CIDR6: 1
 # TOTAL: 654
 payload:
+  - DOMAIN,paly.googleapis.com
+  - DOMAIN,dl.google.com
+  - DOMAIN,translate.google.cn
+  - DOMAIN,tac.googleapis.com
+  - DOMAIN-KEYWORD,google
   - DOMAIN-SUFFIX,0emm.com
   - DOMAIN-SUFFIX,1e100.net
   - DOMAIN-SUFFIX,1ucrs.com
@@ -652,7 +657,6 @@ payload:
   - DOMAIN-SUFFIX,ytimg.com
   - DOMAIN-SUFFIX,zukunftswerkstatt.de
   - DOMAIN-SUFFIX,zynamics.com
-  - DOMAIN-KEYWORD,google
   - IP-CIDR,172.110.32.0/21,no-resolve
   - IP-CIDR,173.194.0.0/16,no-resolve
   - IP-CIDR,216.73.80.0/20,no-resolve
