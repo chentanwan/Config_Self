@@ -267,12 +267,6 @@ rule-providers:
     path: "./Provider/RuleSet/Guard/GoogleVoice.yaml"
     url: https://raw.githubusercontent.com/chentanwan/config_self/main/rule/Clash/GoogleVoice.yaml
     interval: 21600
-  Douyu:
-    type: http
-    behavior: classical
-    path: "./Provider/RuleSet/Guard/Douyu.yaml"
-    url: https://raw.githubusercontent.com/chentanwan/config_self/main/rule/Clash/Douyu.yaml
-    interval: 21600
 rules:
 - RULE-SET,Apple,Apple
 - RULE-SET,Googlevoice,Googlevoice
@@ -296,6 +290,6 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 - IP-CIDR,224.0.0.0/4,DIRECT
 - IP-CIDR,fe80::/10,DIRECT
-#- GEOIP,China,全球直连
-#- GEOIP,Global,Global
+- GEOIP,China,全球直连
+- GEOIP,Global,Global
 - MATCH,Final
