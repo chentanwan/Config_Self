@@ -275,6 +275,7 @@ rule-providers:
 rules:
 - RULE-SET,Apple,Apple
 - RULE-SET,China,China
+- RULE-SET,Googlevoice,Googlevoice
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Google,Google
 - RULE-SET,HBO_asia,HBO_asia
@@ -286,8 +287,6 @@ rules:
 - RULE-SET,Telegram,Telegram
 - RULE-SET,PayPal,PayPal
 - RULE-SET,Spotify,Spotify
-- RULE-SET,Googlevoice,Googlevoice
-- RULE-SET,Douyu,全球直连
 - RULE-SET,Global,Global
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
@@ -296,6 +295,6 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 - IP-CIDR,224.0.0.0/4,DIRECT
 - IP-CIDR,fe80::/10,DIRECT
-- GEOIP,China,DIRECT
+- GEOIP,China,全球直连
 - GEOIP,Global,Global
 - MATCH,Final
