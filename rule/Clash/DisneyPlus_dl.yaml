@@ -2,7 +2,6 @@
 # ONLY log in
 # > Disney Plus
 payload:
-  - USER-AGENT,Disney*
   - DOMAIN-SUFFIX,disneyplus.com
   - DOMAIN-SUFFIX,disney-plus.net
   - DOMAIN-SUFFIX,disneystreaming.com
