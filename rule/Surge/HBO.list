@@ -1,10 +1,14 @@
-DOMAIN,SUFFIX,appsflyersdk.com
-DOMAIN-SUFFIX,app-analytics-services.com
-DOMAIN-SUFFIX,litix.io
-DOMAIN-SUFFIX,brightline.tv
-DOMAIN-SUFFIX,mediamelon.com
-DOMAIN-SUFFIX,branch.io
-DOMAIN-SUFFIX,discomax.com
+# NAME: HBO
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# MIRROR: https://github.com/chentanwan/Config_Self
+# UPDATED: 2025-06-06 09:16:58
+# OVERLAY: source/overlays/HBO.txt
+# OVERLAY-ADDED: 7 rule(s) from source/overlays/HBO.txt
+# DOMAIN-SUFFIX: 54
+# PROCESS-NAME: 1
+# USER-AGENT: 2
+# TOTAL: 57
 DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net
 DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
 DOMAIN-SUFFIX,cinemax.com
@@ -55,3 +59,10 @@ DOMAIN-SUFFIX,youboranqs01.com
 USER-AGENT,HBO%20NOW*
 USER-AGENT,HBOMAX*
 PROCESS-NAME,com.hbo.hbonow
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-SUFFIX,litix.io
+DOMAIN-SUFFIX,brightline.tv
+DOMAIN-SUFFIX,mediamelon.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,discomax.com

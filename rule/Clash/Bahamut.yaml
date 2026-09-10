@@ -1,9 +1,10 @@
 # NAME: Bahamut
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:16:12
-# DOMAIN: 1
+# MIRROR: https://github.com/chentanwan/Config_Self
+# UPDATED: 2025-06-06 09:16:56
 # DOMAIN-SUFFIX: 6
+# DOMAIN: 1
 # TOTAL: 7
 payload:
   - DOMAIN,bahamut.akamaized.net

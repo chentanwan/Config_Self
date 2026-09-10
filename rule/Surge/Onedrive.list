@@ -1,14 +1,15 @@
 # NAME: OneDrive
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-10-18 21:03:28
+# MIRROR: https://github.com/chentanwan/Config_Self
+# UPDATED: 2026-01-26 02:06:39
 # DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 12
+# DOMAIN-SUFFIX: 13
 # PROCESS-NAME: 2
-# USER-AGENT: 2
-# TOTAL: 19
+# TOTAL: 18
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,livefilestore.com
+DOMAIN-SUFFIX,microsoftpersonalcontent.com
 DOMAIN-SUFFIX,oneclient.sfx.ms
 DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,onedrive.live.com
@@ -22,7 +23,5 @@ DOMAIN-SUFFIX,storage.msn.com
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,onedrive
 DOMAIN-KEYWORD,skydrive
-USER-AGENT,OneDrive*
-USER-AGENT,OneDriveiOSApp*
-PROCESS-NAME,onedrive
-PROCESS-NAME,onedriveupdater
+PROCESS-NAME,OneDrive
+PROCESS-NAME,OneDriveUpdater

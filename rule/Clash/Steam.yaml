@@ -1,9 +1,11 @@
 # NAME: SteamCN
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:14:50
-# DOMAIN: 12
+# MIRROR: https://github.com/chentanwan/Config_Self
+# UPDATED: 2025-06-06 09:15:09
+# NOTE: 历史文件名，内容为 SteamCN（国服）
 # DOMAIN-SUFFIX: 5
+# DOMAIN: 12
 # TOTAL: 17
 payload:
   - DOMAIN,csgo.wmsj.cn

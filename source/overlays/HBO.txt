@@ -1,0 +1,9 @@
+# Extra HBO / Max tracking & playback domains kept from Config_Self.
+# Format: Surge-style TYPE,value  (Clash output is auto-converted)
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-SUFFIX,litix.io
+DOMAIN-SUFFIX,brightline.tv
+DOMAIN-SUFFIX,mediamelon.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,discomax.com
