@@ -1,0 +1,281 @@
+# Config_Self — Clash Meta / Mihomo 分流片段
+# 用法：把下面三段合并进你现有的 config.yaml
+#   1) proxy-groups  — 策略组
+#   2) rule-providers — 规则集（classical）
+#   3) rules          — 匹配顺序（越具体越靠前）
+#
+# 不会覆盖你的 proxies / proxy-providers。
+# RAW: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/<Name>.yaml
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies: [DIRECT]   # 把你的机场/节点组名加在 DIRECT 前面
+
+  - name: AI
+    type: select
+    proxies: [PROXY, DIRECT]
+  - name: Crypto
+    type: select
+    proxies: [PROXY, DIRECT]
+  - name: Web3
+    type: select
+    proxies: [PROXY, DIRECT]
+  - name: Streaming
+    type: select
+    proxies: [PROXY, DIRECT]
+  - name: Social
+    type: select
+    proxies: [PROXY, DIRECT]
+  - name: Telegram
+    type: select
+    proxies: [PROXY, DIRECT]
+  - name: Apple
+    type: select
+    proxies: [DIRECT, PROXY]
+  - name: Microsoft
+    type: select
+    proxies: [DIRECT, PROXY]
+  - name: China
+    type: select
+    proxies: [DIRECT, PROXY]
+  - name: Final
+    type: select
+    proxies: [PROXY, DIRECT]
+
+rule-providers:
+  AI:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/AI.yaml
+    path: ./ruleset/AI.yaml
+  Crypto:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Crypto.yaml
+    path: ./ruleset/Crypto.yaml
+  Web3:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Web3.yaml
+    path: ./ruleset/Web3.yaml
+  Netflix:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Netflix.yaml
+    path: ./ruleset/Netflix.yaml
+  Disney:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Disneyplus.yaml
+    path: ./ruleset/Disney.yaml
+  HBO:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/HBO.yaml
+    path: ./ruleset/HBO.yaml
+  Spotify:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Spotify.yaml
+    path: ./ruleset/Spotify.yaml
+  YouTube:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/YouTube.yaml
+    path: ./ruleset/YouTube.yaml
+  Twitch:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Twitch.yaml
+    path: ./ruleset/Twitch.yaml
+  AmazonPrimeVideo:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/AmazonPrimeVideo.yaml
+    path: ./ruleset/AmazonPrimeVideo.yaml
+  GlobalMedia:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/GlobalMedia.yaml
+    path: ./ruleset/GlobalMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Telegram.yaml
+    path: ./ruleset/Telegram.yaml
+  Whatsapp:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Whatsapp.yaml
+    path: ./ruleset/Whatsapp.yaml
+  Twitter:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Twitter.yaml
+    path: ./ruleset/Twitter.yaml
+  Facebook:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Facebook.yaml
+    path: ./ruleset/Facebook.yaml
+  Instagram:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Instagram.yaml
+    path: ./ruleset/Instagram.yaml
+  Threads:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Threads.yaml
+    path: ./ruleset/Threads.yaml
+  Discord:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Discord.yaml
+    path: ./ruleset/Discord.yaml
+  TikTok:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/TikTok.yaml
+    path: ./ruleset/TikTok.yaml
+  AppleProxy:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/AppleProxy.yaml
+    path: ./ruleset/AppleProxy.yaml
+  Apple:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Apple.yaml
+    path: ./ruleset/Apple.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Microsoft.yaml
+    path: ./ruleset/Microsoft.yaml
+  OneDrive:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/OneDrive.yaml
+    path: ./ruleset/OneDrive.yaml
+  ChinaMax:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/ChinaMax_Classical.yaml
+    path: ./ruleset/ChinaMax.yaml
+  ChinaMedia:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/ChinaMedia.yaml
+    path: ./ruleset/ChinaMedia.yaml
+  Tencent:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Tencent.yaml
+    path: ./ruleset/Tencent.yaml
+  Alibaba:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Alibaba.yaml
+    path: ./ruleset/Alibaba.yaml
+  Huawei:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Huawei.yaml
+    path: ./ruleset/Huawei.yaml
+
+rules:
+  # --- AI ---
+  - RULE-SET,AI,AI
+  # --- 交易所 / Web3（Web3 放交易所后面，避免钱包域名被 Crypto 抢走也可对调）---
+  - RULE-SET,Crypto,Crypto
+  - RULE-SET,Web3,Web3
+  # --- 国外流媒体（单品牌优先于 GlobalMedia）---
+  - RULE-SET,Netflix,Streaming
+  - RULE-SET,Disney,Streaming
+  - RULE-SET,HBO,Streaming
+  - RULE-SET,Spotify,Streaming
+  - RULE-SET,YouTube,Streaming
+  - RULE-SET,Twitch,Streaming
+  - RULE-SET,AmazonPrimeVideo,Streaming
+  - RULE-SET,GlobalMedia,Streaming
+  # --- 社交 ---
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Whatsapp,Social
+  - RULE-SET,Twitter,Social
+  - RULE-SET,Facebook,Social
+  - RULE-SET,Instagram,Social
+  - RULE-SET,Threads,Social
+  - RULE-SET,Discord,Social
+  - RULE-SET,TikTok,Social
+  # --- 苹果：先代理项，再国内直连项 ---
+  - RULE-SET,AppleProxy,PROXY
+  - RULE-SET,Apple,Apple
+  # --- 微软 ---
+  - RULE-SET,OneDrive,Microsoft
+  - RULE-SET,Microsoft,Microsoft
+  # --- 国内（放后面，避免误伤上面的国际服务）---
+  - RULE-SET,ChinaMedia,China
+  - RULE-SET,Tencent,China
+  - RULE-SET,Alibaba,China
+  - RULE-SET,Huawei,China
+  - RULE-SET,ChinaMax,China
+  - GEOIP,CN,China
+  - MATCH,Final

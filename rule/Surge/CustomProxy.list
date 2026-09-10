@@ -1,0 +1,19 @@
+# NAME: CustomProxy
+# AUTHOR: Config_Self
+# REPO: https://github.com/chentanwan/Config_Self
+# MIRROR: https://github.com/chentanwan/Config_Self
+# OVERLAY: source/overlays/CustomProxy.txt
+# NOTE: 个人迁移的代理规则
+# OVERLAY-ADDED: 8 rule(s) from source/overlays/CustomProxy.txt
+# DOMAIN-KEYWORD: 2
+# DOMAIN-SUFFIX: 4
+# DOMAIN: 2
+# TOTAL: 8
+DOMAIN-KEYWORD,zdassets
+DOMAIN-KEYWORD,tamana
+DOMAIN,firefox.chentanwan.xyz
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,forobeta.com
+DOMAIN-SUFFIX,quora.com
+DOMAIN-SUFFIX,sms-activate.org
+DOMAIN,api.trakt.tv

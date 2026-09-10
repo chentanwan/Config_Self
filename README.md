@@ -157,3 +157,27 @@ GitHub Actions：每周一 03:17 UTC 自动同步；也可在 Actions 里手动�
 ## 声明
 
 规则数据来自互联网开源项目（主要为 blackmatrix7），仅供学习研究。使用后果由使用者自行承担。
+
+## Surge 规则迁移
+
+已从个人 Surge `[Rule]` 迁移并筛查：
+
+- 重复的 WhatsApp / Telegram / Discord / Reddit / Bybit / Rainbow / HBO 域名已去重
+- `app-analytics-services.com` 只保留在 HBO overlay，不重复放入 Crypto
+- Crypto 新增 Bybit / Bitget API、CDN、跟踪域名
+- Web3 新增 Dexscreener
+- AI 新增 Poe、Google OAuth / AI 相关域名
+- 新增上游 Game、Epic、Apkpure、GitHub、Protonmail 规则
+- 新增个人分类：`CustomProxy`、`CustomDirect`
+
+个人规则：
+
+| 集合 | 说明 | Clash | Surge |
+| --- | --- | --- | --- |
+| CustomProxy | zdassets、tamana、个人站点、Hostloc、Quora、Proton 辅助等代理规则 | [CustomProxy.yaml](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/CustomProxy.yaml) | [CustomProxy.list](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Surge/CustomProxy.list) |
+| CustomDirect | 自建节点 IP、国内服务、个人内网/直连域名 | [CustomDirect.yaml](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/CustomDirect.yaml) | [CustomDirect.list](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Surge/CustomDirect.list) |
+| Game | 游戏平台及相关服务 | [Game.yaml](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Game.yaml) | [Game.list](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Surge/Game.list) |
+| GitHub | GitHub | [GitHub.yaml](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/GitHub.yaml) | [GitHub.list](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Surge/GitHub.list) |
+| Protonmail | Proton Mail | [Protonmail.yaml](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Clash/Protonmail.yaml) | [Protonmail.list](https://raw.githubusercontent.com/chentanwan/Config_Self/main/rule/Surge/Protonmail.list) |
+
+Config_Self 主配置已接入这些新集合；Clash 使用 `🚀 手动切换` / `🎯 全球直连` / `🎮 游戏平台`，Surge 侧按对应策略组使用。

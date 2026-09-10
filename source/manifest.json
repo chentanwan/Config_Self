@@ -726,6 +726,75 @@
     {
       "local": "rule/Surge/LinkedIn.list",
       "remote": "rule/Surge/LinkedIn/LinkedIn.list"
+    },
+    {
+      "local": "rule/Clash/CustomProxy.yaml",
+      "name": "CustomProxy",
+      "overlay": "source/overlays/CustomProxy.txt",
+      "note": "个人迁移的代理规则"
+    },
+    {
+      "local": "rule/Surge/CustomProxy.list",
+      "name": "CustomProxy",
+      "overlay": "source/overlays/CustomProxy.txt",
+      "note": "个人迁移的代理规则"
+    },
+    {
+      "local": "rule/Clash/CustomDirect.yaml",
+      "name": "CustomDirect",
+      "overlay": "source/overlays/CustomDirect.txt",
+      "note": "个人迁移的直连规则"
+    },
+    {
+      "local": "rule/Surge/CustomDirect.list",
+      "name": "CustomDirect",
+      "overlay": "source/overlays/CustomDirect.txt",
+      "note": "个人迁移的直连规则"
+    },
+    {
+      "local": "rule/Clash/Game.yaml",
+      "remote": "rule/Clash/Game/Game.yaml",
+      "note": "游戏平台及相关服务"
+    },
+    {
+      "local": "rule/Surge/Game.list",
+      "remote": "rule/Surge/Game/Game.list"
+    },
+    {
+      "local": "rule/Clash/Epic.yaml",
+      "remote": "rule/Clash/Epic/Epic.yaml",
+      "note": "Epic Games"
+    },
+    {
+      "local": "rule/Surge/Epic.list",
+      "remote": "rule/Surge/Epic/Epic.list"
+    },
+    {
+      "local": "rule/Clash/Apkpure.yaml",
+      "remote": "rule/Clash/Apkpure/Apkpure.yaml",
+      "note": "APKPure"
+    },
+    {
+      "local": "rule/Surge/Apkpure.list",
+      "remote": "rule/Surge/Apkpure/Apkpure.list"
+    },
+    {
+      "local": "rule/Clash/GitHub.yaml",
+      "remote": "rule/Clash/GitHub/GitHub.yaml",
+      "note": "GitHub"
+    },
+    {
+      "local": "rule/Surge/GitHub.list",
+      "remote": "rule/Surge/GitHub/GitHub.list"
+    },
+    {
+      "local": "rule/Clash/Protonmail.yaml",
+      "remote": "rule/Clash/Protonmail/Protonmail.yaml",
+      "note": "Proton Mail"
+    },
+    {
+      "local": "rule/Surge/Protonmail.list",
+      "remote": "rule/Surge/Protonmail/Protonmail.list"
     }
   ]
 }

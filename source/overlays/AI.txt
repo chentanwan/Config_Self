@@ -25,3 +25,9 @@ DOMAIN-SUFFIX,anthropic.com
 # Google AI extras
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poe.com.cdn.cloudflare.net
+DOMAIN,oauth2.googleapis.com
+DOMAIN,oauthaccountmanager.googleapis.com
+DOMAIN,prod.zinc.cloud.cupronickel.goog
+DOMAIN,prod.brass.cloud.cupronickel.goog

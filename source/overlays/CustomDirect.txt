@@ -1,0 +1,12 @@
+# Personal direct rules migrated from Surge
+IP-CIDR,154.12.53.24/32
+DOMAIN-SUFFIX,211024.xyz
+DOMAIN-KEYWORD,huolala
+DOMAIN-KEYWORD,linkease
+DOMAIN-KEYWORD,szmmail
+DOMAIN-KEYWORD,douyu
+DOMAIN-KEYWORD,kooldns
+DOMAIN,www.macdo.cn
+DOMAIN-SUFFIX,qnap.wuyangxx.tech
+DOMAIN-SUFFIX,gov.cn
+DOMAIN-SUFFIX,ebay.com

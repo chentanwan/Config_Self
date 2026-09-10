@@ -6,11 +6,12 @@
 # OVERLAY: source/overlays/Crypto.txt
 # NOTE: 交易所+DEX 聚合，叠加 Bitget/MEXC/Gate 等本地补丁
 # UPSTREAM: rule/Surge/Crypto/Crypto.list, rule/Surge/Cryptocurrency/Cryptocurrency.list
-# OVERLAY-ADDED: 56 rule(s) from source/overlays/Crypto.txt
+# OVERLAY-ADDED: 76 rule(s) from source/overlays/Crypto.txt
 # DOMAIN-KEYWORD: 7
 # DOMAIN-SUFFIX: 257
-# DOMAIN: 1
-# TOTAL: 265
+# DOMAIN: 20
+# IP-CIDR: 1
+# TOTAL: 285
 DOMAIN,token-api.metaswap.codefi.network
 DOMAIN-SUFFIX,1inch.io
 DOMAIN-SUFFIX,1ml.com
@@ -276,3 +277,23 @@ DOMAIN-SUFFIX,pumpfun.com
 DOMAIN-SUFFIX,jito.wtf
 DOMAIN-SUFFIX,helius.dev
 DOMAIN-SUFFIX,helius-rpc.com
+DOMAIN,api3.ng-dex.com
+DOMAIN,fh-static.bycsi.com
+DOMAIN,api3.byd3c3.com
+DOMAIN,ws2.byabcde.com
+DOMAIN,ws2.bybdc6.com
+DOMAIN,ws2.byapps.net
+DOMAIN,api3.bybit.biz
+DOMAIN,sc-abtest.ffe390afd658c19dcbf707e0597b846d.de
+DOMAIN,sc-datasink.ffbbbdc6d3c353211fe2ba39c9f744cd.com
+DOMAIN,ws2.byd3c3.com
+DOMAIN,api3.byabcde.com
+DOMAIN,api.ffbbbdc6d3c353211fe2ba39c9f744cd.com
+DOMAIN,api.wsot2022.com
+DOMAIN,appapi.gm816.com
+DOMAIN,appapi.abcdstable.com
+DOMAIN,static.bscdnweb.com
+DOMAIN,incenti.zendesk.com
+IP-CIDR,23.212.62.196/32,no-resolve
+DOMAIN,m3ond3-inapps.appsflyersdk.com
+DOMAIN,m3ond3-launches.appsflyersdk.com

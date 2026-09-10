@@ -6,13 +6,13 @@
 # OVERLAY: source/overlays/AI.txt
 # NOTE: OpenAI+Claude+Gemini+Copilot 聚合，叠加 Cursor/Grok
 # UPSTREAM: rule/Surge/OpenAI/OpenAI.list, rule/Surge/Claude/Claude.list, rule/Surge/Anthropic/Anthropic.list, rule/Surge/Gemini/Gemini.list, rule/Surge/BardAI/BardAI.list, rule/Surge/Copilot/Copilot.list
-# OVERLAY-ADDED: 16 rule(s) from source/overlays/AI.txt
+# OVERLAY-ADDED: 22 rule(s) from source/overlays/AI.txt
 # DOMAIN-KEYWORD: 7
-# DOMAIN-SUFFIX: 50
-# DOMAIN: 28
+# DOMAIN-SUFFIX: 52
+# DOMAIN: 32
 # IP-CIDR: 2
 # IP-ASN: 2
-# TOTAL: 89
+# TOTAL: 95
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openai-api.arkoselabs.com
@@ -102,3 +102,9 @@ DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poe.com.cdn.cloudflare.net
+DOMAIN,oauth2.googleapis.com
+DOMAIN,oauthaccountmanager.googleapis.com
+DOMAIN,prod.zinc.cloud.cupronickel.goog
+DOMAIN,prod.brass.cloud.cupronickel.goog

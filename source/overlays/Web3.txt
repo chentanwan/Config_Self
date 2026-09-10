@@ -85,3 +85,4 @@ DOMAIN-SUFFIX,across.to
 DOMAIN-SUFFIX,layerzero.network
 DOMAIN-SUFFIX,stargate.finance
 DOMAIN-KEYWORD,walletconnect
+DOMAIN-SUFFIX,dexscreener.com

@@ -1,0 +1,9 @@
+# Personal proxy rules migrated from Surge
+DOMAIN-KEYWORD,zdassets
+DOMAIN-KEYWORD,tamana
+DOMAIN,firefox.chentanwan.xyz
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,forobeta.com
+DOMAIN-SUFFIX,quora.com
+DOMAIN-SUFFIX,sms-activate.org
+DOMAIN,api.trakt.tv

@@ -4,10 +4,10 @@
 # MIRROR: https://github.com/chentanwan/Config_Self
 # OVERLAY: source/overlays/Web3.txt
 # NOTE: 本地精选：交易所钱包 / Rainbow / Phantom / MetaMask / Uniswap / Base / GMGN / Tangem
-# OVERLAY-ADDED: 76 rule(s) from source/overlays/Web3.txt
+# OVERLAY-ADDED: 77 rule(s) from source/overlays/Web3.txt
 # DOMAIN-KEYWORD: 2
-# DOMAIN-SUFFIX: 74
-# TOTAL: 76
+# DOMAIN-SUFFIX: 75
+# TOTAL: 77
 payload:
   - DOMAIN-SUFFIX,binance.org
   - DOMAIN-SUFFIX,trustwallet.com
@@ -85,3 +85,4 @@ payload:
   - DOMAIN-SUFFIX,layerzero.network
   - DOMAIN-SUFFIX,stargate.finance
   - DOMAIN-KEYWORD,walletconnect
+  - DOMAIN-SUFFIX,dexscreener.com

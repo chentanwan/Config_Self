@@ -1,0 +1,23 @@
+# NAME: CustomDirect
+# AUTHOR: Config_Self
+# REPO: https://github.com/chentanwan/Config_Self
+# MIRROR: https://github.com/chentanwan/Config_Self
+# OVERLAY: source/overlays/CustomDirect.txt
+# NOTE: 个人迁移的直连规则
+# OVERLAY-ADDED: 11 rule(s) from source/overlays/CustomDirect.txt
+# DOMAIN-KEYWORD: 5
+# DOMAIN-SUFFIX: 4
+# DOMAIN: 1
+# IP-CIDR: 1
+# TOTAL: 11
+IP-CIDR,154.12.53.24/32,no-resolve
+DOMAIN-SUFFIX,211024.xyz
+DOMAIN-KEYWORD,huolala
+DOMAIN-KEYWORD,linkease
+DOMAIN-KEYWORD,szmmail
+DOMAIN-KEYWORD,douyu
+DOMAIN-KEYWORD,kooldns
+DOMAIN,www.macdo.cn
+DOMAIN-SUFFIX,qnap.wuyangxx.tech
+DOMAIN-SUFFIX,gov.cn
+DOMAIN-SUFFIX,ebay.com
