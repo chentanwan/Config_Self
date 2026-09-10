@@ -7,58 +7,725 @@
     "rule/Surge/DisneyPlus_dl.list"
   ],
   "rules": [
-    {"local": "rule/Clash/Apple.yaml", "remote": "rule/Clash/Apple/Apple.yaml"},
-    {"local": "rule/Clash/AppleTV.yaml", "remote": "rule/Clash/AppleTV/AppleTV.yaml"},
-    {"local": "rule/Clash/Bahamut.yaml", "remote": "rule/Clash/Bahamut/Bahamut.yaml"},
-    {"local": "rule/Clash/ChinaMax_Classical.yaml", "remote": "rule/Clash/ChinaMax/ChinaMax_Classical.yaml"},
-    {"local": "rule/Clash/ChinaMedia.yaml", "remote": "rule/Clash/ChinaMedia/ChinaMedia.yaml"},
-    {"local": "rule/Clash/Disneyplus.yaml", "remote": "rule/Clash/Disney/Disney.yaml", "note": "文件名沿用 Disneyplus，内容为上游 Disney"},
-    {"local": "rule/Clash/Download.yaml", "remote": "rule/Clash/Download/Download.yaml"},
-    {"local": "rule/Clash/Emby.yaml", "remote": "rule/Clash/Emby/Emby.yaml"},
-    {"local": "rule/Clash/Global.yaml", "remote": "rule/Clash/Global/Global.yaml"},
-    {"local": "rule/Clash/Google.yaml", "remote": "rule/Clash/Google/Google.yaml"},
-    {"local": "rule/Clash/GoogleVoice.yaml", "remote": "rule/Clash/GoogleVoice/GoogleVoice.yaml"},
-    {"local": "rule/Clash/HBO.yaml", "remote": "rule/Clash/HBO/HBO.yaml", "overlay": "source/overlays/HBO.txt"},
-    {"local": "rule/Clash/Microsoft.yaml", "remote": "rule/Clash/Microsoft/Microsoft.yaml"},
-    {"local": "rule/Clash/Netflix.yaml", "remote": "rule/Clash/Netflix/Netflix.yaml"},
-    {"local": "rule/Clash/OpenAI.yaml", "remote": "rule/Clash/OpenAI/OpenAI.yaml"},
-    {"local": "rule/Clash/PayPal.yaml", "remote": "rule/Clash/PayPal/PayPal.yaml"},
-    {"local": "rule/Clash/Spotify.yaml", "remote": "rule/Clash/Spotify/Spotify.yaml"},
-    {"local": "rule/Clash/Steam.yaml", "remote": "rule/Clash/SteamCN/SteamCN.yaml", "note": "历史文件名，内容为 SteamCN（国服）"},
-    {"local": "rule/Clash/SteamCN.yaml", "remote": "rule/Clash/SteamCN/SteamCN.yaml"},
-    {"local": "rule/Clash/SteamGlobal.yaml", "remote": "rule/Clash/Steam/Steam.yaml"},
-    {"local": "rule/Clash/Telegram.yaml", "remote": "rule/Clash/Telegram/Telegram.yaml"},
-    {"local": "rule/Clash/Twitter.yaml", "remote": "rule/Clash/Twitter/Twitter.yaml"},
-    {"local": "rule/Clash/Discord.yaml", "remote": "rule/Clash/Discord/Discord.yaml"},
-    {"local": "rule/Clash/Twitch.yaml", "remote": "rule/Clash/Twitch/Twitch.yaml"},
-    {"local": "rule/Clash/WeChat.yaml", "remote": "rule/Clash/WeChat/WeChat.yaml"},
-    {"local": "rule/Clash/OneDrive.yaml", "remote": "rule/Clash/OneDrive/OneDrive.yaml"},
-    {"local": "rule/Clash/Whatsapp.yaml", "remote": "rule/Clash/Whatsapp/Whatsapp.yaml"},
-    {"local": "rule/Clash/YouTube.yaml", "remote": "rule/Clash/YouTube/YouTube.yaml"},
-
-    {"local": "rule/Surge/Apple.list", "remote": "rule/Surge/Apple/Apple.list"},
-    {"local": "rule/Surge/Bahamut.list", "remote": "rule/Surge/Bahamut/Bahamut.list"},
-    {"local": "rule/Surge/ChinaMax.list", "remote": "rule/Surge/ChinaMax/ChinaMax.list"},
-    {"local": "rule/Surge/Discord.list", "remote": "rule/Surge/Discord/Discord.list"},
-    {"local": "rule/Surge/Disney.list", "remote": "rule/Surge/Disney/Disney.list"},
-    {"local": "rule/Surge/Download.list", "remote": "rule/Surge/Download/Download.list"},
-    {"local": "rule/Surge/Emby.list", "remote": "rule/Surge/Emby/Emby.list"},
-    {"local": "rule/Surge/Google.list", "remote": "rule/Surge/Google/Google.list"},
-    {"local": "rule/Surge/Googlevoice.list", "remote": "rule/Surge/GoogleVoice/GoogleVoice.list"},
-    {"local": "rule/Surge/HBO.list", "remote": "rule/Surge/HBO/HBO.list", "overlay": "source/overlays/HBO.txt"},
-    {"local": "rule/Surge/HBO_asia.list", "remote": "rule/Surge/HBOAsia/HBOAsia.list"},
-    {"local": "rule/Surge/HBO_usa.list", "remote": "rule/Surge/HBOUSA/HBOUSA.list"},
-    {"local": "rule/Surge/Microsoft.list", "remote": "rule/Surge/Microsoft/Microsoft.list"},
-    {"local": "rule/Surge/Netflix.list", "remote": "rule/Surge/Netflix/Netflix.list"},
-    {"local": "rule/Surge/Onedrive.list", "remote": "rule/Surge/OneDrive/OneDrive.list"},
-    {"local": "rule/Surge/OpenAI.list", "remote": "rule/Surge/OpenAI/OpenAI.list"},
-    {"local": "rule/Surge/PayPal.list", "remote": "rule/Surge/PayPal/PayPal.list"},
-    {"local": "rule/Surge/Spotify.list", "remote": "rule/Surge/Spotify/Spotify.list"},
-    {"local": "rule/Surge/Telegram.list", "remote": "rule/Surge/Telegram/Telegram.list"},
-    {"local": "rule/Surge/Twitter.list", "remote": "rule/Surge/Twitter/Twitter.list"},
-    {"local": "rule/Surge/WeChat.list", "remote": "rule/Surge/WeChat/WeChat.list"},
-    {"local": "rule/Surge/Whatsapp.list", "remote": "rule/Surge/Whatsapp/Whatsapp.list"},
-    {"local": "rule/Surge/YouTube.list", "remote": "rule/Surge/YouTube/YouTube.list"},
-    {"local": "rule/Surge/twitch.list", "remote": "rule/Surge/Twitch/Twitch.list"}
+    {
+      "local": "rule/Clash/Apple.yaml",
+      "remote": "rule/Clash/Apple/Apple.yaml"
+    },
+    {
+      "local": "rule/Surge/Apple.list",
+      "remote": "rule/Surge/Apple/Apple.list"
+    },
+    {
+      "local": "rule/Clash/AppleTV.yaml",
+      "remote": "rule/Clash/AppleTV/AppleTV.yaml"
+    },
+    {
+      "local": "rule/Surge/AppleTV.list",
+      "remote": "rule/Surge/AppleTV/AppleTV.list"
+    },
+    {
+      "local": "rule/Clash/AppleMedia.yaml",
+      "remote": "rule/Clash/AppleMedia/AppleMedia.yaml"
+    },
+    {
+      "local": "rule/Surge/AppleMedia.list",
+      "remote": "rule/Surge/AppleMedia/AppleMedia.list"
+    },
+    {
+      "local": "rule/Clash/AppleMusic.yaml",
+      "remote": "rule/Clash/AppleMusic/AppleMusic.yaml"
+    },
+    {
+      "local": "rule/Surge/AppleMusic.list",
+      "remote": "rule/Surge/AppleMusic/AppleMusic.list"
+    },
+    {
+      "local": "rule/Clash/AppleProxy.yaml",
+      "remote": "rule/Clash/AppleProxy/AppleProxy.yaml"
+    },
+    {
+      "local": "rule/Surge/AppleProxy.list",
+      "remote": "rule/Surge/AppleProxy/AppleProxy.list"
+    },
+    {
+      "local": "rule/Clash/AppleID.yaml",
+      "remote": "rule/Clash/AppleID/AppleID.yaml"
+    },
+    {
+      "local": "rule/Surge/AppleID.list",
+      "remote": "rule/Surge/AppleID/AppleID.list"
+    },
+    {
+      "local": "rule/Clash/iCloud.yaml",
+      "remote": "rule/Clash/iCloud/iCloud.yaml"
+    },
+    {
+      "local": "rule/Surge/iCloud.list",
+      "remote": "rule/Surge/iCloud/iCloud.list"
+    },
+    {
+      "local": "rule/Clash/Bahamut.yaml",
+      "remote": "rule/Clash/Bahamut/Bahamut.yaml"
+    },
+    {
+      "local": "rule/Surge/Bahamut.list",
+      "remote": "rule/Surge/Bahamut/Bahamut.list"
+    },
+    {
+      "local": "rule/Clash/ChinaMax_Classical.yaml",
+      "remote": "rule/Clash/ChinaMax/ChinaMax_Classical.yaml"
+    },
+    {
+      "local": "rule/Surge/ChinaMax.list",
+      "remote": "rule/Surge/ChinaMax/ChinaMax.list"
+    },
+    {
+      "local": "rule/Clash/ChinaMedia.yaml",
+      "remote": "rule/Clash/ChinaMedia/ChinaMedia.yaml"
+    },
+    {
+      "local": "rule/Surge/ChinaMedia.list",
+      "remote": "rule/Surge/ChinaMedia/ChinaMedia.list"
+    },
+    {
+      "local": "rule/Clash/China.yaml",
+      "remote": "rule/Clash/China/China.yaml"
+    },
+    {
+      "local": "rule/Surge/China.list",
+      "remote": "rule/Surge/China/China.list"
+    },
+    {
+      "local": "rule/Clash/Disneyplus.yaml",
+      "remote": "rule/Clash/Disney/Disney.yaml",
+      "note": "文件名沿用 Disneyplus，内容为上游 Disney"
+    },
+    {
+      "local": "rule/Surge/Disney.list",
+      "remote": "rule/Surge/Disney/Disney.list"
+    },
+    {
+      "local": "rule/Clash/Download.yaml",
+      "remote": "rule/Clash/Download/Download.yaml"
+    },
+    {
+      "local": "rule/Surge/Download.list",
+      "remote": "rule/Surge/Download/Download.list"
+    },
+    {
+      "local": "rule/Clash/Emby.yaml",
+      "remote": "rule/Clash/Emby/Emby.yaml"
+    },
+    {
+      "local": "rule/Surge/Emby.list",
+      "remote": "rule/Surge/Emby/Emby.list"
+    },
+    {
+      "local": "rule/Clash/Global.yaml",
+      "remote": "rule/Clash/Global/Global.yaml"
+    },
+    {
+      "local": "rule/Clash/GlobalMedia.yaml",
+      "remote": "rule/Clash/GlobalMedia/GlobalMedia.yaml"
+    },
+    {
+      "local": "rule/Surge/GlobalMedia.list",
+      "remote": "rule/Surge/GlobalMedia/GlobalMedia.list"
+    },
+    {
+      "local": "rule/Clash/Google.yaml",
+      "remote": "rule/Clash/Google/Google.yaml"
+    },
+    {
+      "local": "rule/Surge/Google.list",
+      "remote": "rule/Surge/Google/Google.list"
+    },
+    {
+      "local": "rule/Clash/GoogleVoice.yaml",
+      "remote": "rule/Clash/GoogleVoice/GoogleVoice.yaml"
+    },
+    {
+      "local": "rule/Surge/Googlevoice.list",
+      "remote": "rule/Surge/GoogleVoice/GoogleVoice.list"
+    },
+    {
+      "local": "rule/Clash/HBO.yaml",
+      "remote": "rule/Clash/HBO/HBO.yaml",
+      "overlay": "source/overlays/HBO.txt"
+    },
+    {
+      "local": "rule/Surge/HBO.list",
+      "remote": "rule/Surge/HBO/HBO.list",
+      "overlay": "source/overlays/HBO.txt"
+    },
+    {
+      "local": "rule/Clash/HBOAsia.yaml",
+      "remote": "rule/Clash/HBOAsia/HBOAsia.yaml"
+    },
+    {
+      "local": "rule/Surge/HBO_asia.list",
+      "remote": "rule/Surge/HBOAsia/HBOAsia.list"
+    },
+    {
+      "local": "rule/Clash/HBOUSA.yaml",
+      "remote": "rule/Clash/HBOUSA/HBOUSA.yaml"
+    },
+    {
+      "local": "rule/Surge/HBO_usa.list",
+      "remote": "rule/Surge/HBOUSA/HBOUSA.list"
+    },
+    {
+      "local": "rule/Clash/HBOHK.yaml",
+      "remote": "rule/Clash/HBOHK/HBOHK.yaml"
+    },
+    {
+      "local": "rule/Surge/HBOHK.list",
+      "remote": "rule/Surge/HBOHK/HBOHK.list"
+    },
+    {
+      "local": "rule/Clash/Microsoft.yaml",
+      "remote": "rule/Clash/Microsoft/Microsoft.yaml"
+    },
+    {
+      "local": "rule/Surge/Microsoft.list",
+      "remote": "rule/Surge/Microsoft/Microsoft.list"
+    },
+    {
+      "local": "rule/Clash/MicrosoftEdge.yaml",
+      "remote": "rule/Clash/MicrosoftEdge/MicrosoftEdge.yaml"
+    },
+    {
+      "local": "rule/Surge/MicrosoftEdge.list",
+      "remote": "rule/Surge/MicrosoftEdge/MicrosoftEdge.list"
+    },
+    {
+      "local": "rule/Clash/Teams.yaml",
+      "remote": "rule/Clash/Teams/Teams.yaml"
+    },
+    {
+      "local": "rule/Surge/Teams.list",
+      "remote": "rule/Surge/Teams/Teams.list"
+    },
+    {
+      "local": "rule/Clash/Netflix.yaml",
+      "remote": "rule/Clash/Netflix/Netflix.yaml"
+    },
+    {
+      "local": "rule/Surge/Netflix.list",
+      "remote": "rule/Surge/Netflix/Netflix.list"
+    },
+    {
+      "local": "rule/Clash/OpenAI.yaml",
+      "remote": "rule/Clash/OpenAI/OpenAI.yaml"
+    },
+    {
+      "local": "rule/Surge/OpenAI.list",
+      "remote": "rule/Surge/OpenAI/OpenAI.list"
+    },
+    {
+      "local": "rule/Clash/PayPal.yaml",
+      "remote": "rule/Clash/PayPal/PayPal.yaml"
+    },
+    {
+      "local": "rule/Surge/PayPal.list",
+      "remote": "rule/Surge/PayPal/PayPal.list"
+    },
+    {
+      "local": "rule/Clash/Spotify.yaml",
+      "remote": "rule/Clash/Spotify/Spotify.yaml"
+    },
+    {
+      "local": "rule/Surge/Spotify.list",
+      "remote": "rule/Surge/Spotify/Spotify.list"
+    },
+    {
+      "local": "rule/Clash/Steam.yaml",
+      "remote": "rule/Clash/SteamCN/SteamCN.yaml",
+      "note": "历史文件名，内容为 SteamCN（国服）"
+    },
+    {
+      "local": "rule/Clash/SteamCN.yaml",
+      "remote": "rule/Clash/SteamCN/SteamCN.yaml"
+    },
+    {
+      "local": "rule/Clash/SteamGlobal.yaml",
+      "remote": "rule/Clash/Steam/Steam.yaml"
+    },
+    {
+      "local": "rule/Clash/Telegram.yaml",
+      "remote": "rule/Clash/Telegram/Telegram.yaml"
+    },
+    {
+      "local": "rule/Surge/Telegram.list",
+      "remote": "rule/Surge/Telegram/Telegram.list"
+    },
+    {
+      "local": "rule/Clash/Twitter.yaml",
+      "remote": "rule/Clash/Twitter/Twitter.yaml"
+    },
+    {
+      "local": "rule/Surge/Twitter.list",
+      "remote": "rule/Surge/Twitter/Twitter.list"
+    },
+    {
+      "local": "rule/Clash/Discord.yaml",
+      "remote": "rule/Clash/Discord/Discord.yaml"
+    },
+    {
+      "local": "rule/Surge/Discord.list",
+      "remote": "rule/Surge/Discord/Discord.list"
+    },
+    {
+      "local": "rule/Clash/Twitch.yaml",
+      "remote": "rule/Clash/Twitch/Twitch.yaml"
+    },
+    {
+      "local": "rule/Surge/twitch.list",
+      "remote": "rule/Surge/Twitch/Twitch.list"
+    },
+    {
+      "local": "rule/Clash/WeChat.yaml",
+      "remote": "rule/Clash/WeChat/WeChat.yaml"
+    },
+    {
+      "local": "rule/Surge/WeChat.list",
+      "remote": "rule/Surge/WeChat/WeChat.list"
+    },
+    {
+      "local": "rule/Clash/OneDrive.yaml",
+      "remote": "rule/Clash/OneDrive/OneDrive.yaml"
+    },
+    {
+      "local": "rule/Surge/Onedrive.list",
+      "remote": "rule/Surge/OneDrive/OneDrive.list"
+    },
+    {
+      "local": "rule/Clash/Whatsapp.yaml",
+      "remote": "rule/Clash/Whatsapp/Whatsapp.yaml"
+    },
+    {
+      "local": "rule/Surge/Whatsapp.list",
+      "remote": "rule/Surge/Whatsapp/Whatsapp.list"
+    },
+    {
+      "local": "rule/Clash/YouTube.yaml",
+      "remote": "rule/Clash/YouTube/YouTube.yaml"
+    },
+    {
+      "local": "rule/Surge/YouTube.list",
+      "remote": "rule/Surge/YouTube/YouTube.list"
+    },
+    {
+      "local": "rule/Clash/Binance.yaml",
+      "remote": "rule/Clash/Binance/Binance.yaml"
+    },
+    {
+      "local": "rule/Surge/Binance.list",
+      "remote": "rule/Surge/Binance/Binance.list"
+    },
+    {
+      "local": "rule/Clash/OKX.yaml",
+      "remote": "rule/Clash/OKX/OKX.yaml"
+    },
+    {
+      "local": "rule/Surge/OKX.list",
+      "remote": "rule/Surge/OKX/OKX.list"
+    },
+    {
+      "local": "rule/Clash/Cryptocurrency.yaml",
+      "remote": "rule/Clash/Cryptocurrency/Cryptocurrency.yaml"
+    },
+    {
+      "local": "rule/Surge/Cryptocurrency.list",
+      "remote": "rule/Surge/Cryptocurrency/Cryptocurrency.list"
+    },
+    {
+      "local": "rule/Clash/Crypto.yaml",
+      "name": "Crypto",
+      "remotes": [
+        "rule/Clash/Crypto/Crypto.yaml",
+        "rule/Clash/Cryptocurrency/Cryptocurrency.yaml"
+      ],
+      "overlay": "source/overlays/Crypto.txt",
+      "note": "交易所+DEX 聚合，叠加 Bitget/MEXC/Gate 等本地补丁"
+    },
+    {
+      "local": "rule/Surge/Crypto.list",
+      "name": "Crypto",
+      "remotes": [
+        "rule/Surge/Crypto/Crypto.list",
+        "rule/Surge/Cryptocurrency/Cryptocurrency.list"
+      ],
+      "overlay": "source/overlays/Crypto.txt",
+      "note": "交易所+DEX 聚合，叠加 Bitget/MEXC/Gate 等本地补丁"
+    },
+    {
+      "local": "rule/Clash/Web3.yaml",
+      "name": "Web3",
+      "overlay": "source/overlays/Web3.txt",
+      "note": "本地精选：交易所钱包 / Rainbow / Phantom / MetaMask / Uniswap / Base / GMGN / Tangem"
+    },
+    {
+      "local": "rule/Surge/Web3.list",
+      "name": "Web3",
+      "overlay": "source/overlays/Web3.txt",
+      "note": "本地精选：交易所钱包 / Rainbow / Phantom / MetaMask / Uniswap / Base / GMGN / Tangem"
+    },
+    {
+      "local": "rule/Clash/Claude.yaml",
+      "remote": "rule/Clash/Claude/Claude.yaml"
+    },
+    {
+      "local": "rule/Surge/Claude.list",
+      "remote": "rule/Surge/Claude/Claude.list"
+    },
+    {
+      "local": "rule/Clash/Anthropic.yaml",
+      "remote": "rule/Clash/Anthropic/Anthropic.yaml"
+    },
+    {
+      "local": "rule/Surge/Anthropic.list",
+      "remote": "rule/Surge/Anthropic/Anthropic.list"
+    },
+    {
+      "local": "rule/Clash/Gemini.yaml",
+      "remote": "rule/Clash/Gemini/Gemini.yaml"
+    },
+    {
+      "local": "rule/Surge/Gemini.list",
+      "remote": "rule/Surge/Gemini/Gemini.list"
+    },
+    {
+      "local": "rule/Clash/BardAI.yaml",
+      "remote": "rule/Clash/BardAI/BardAI.yaml"
+    },
+    {
+      "local": "rule/Surge/BardAI.list",
+      "remote": "rule/Surge/BardAI/BardAI.list"
+    },
+    {
+      "local": "rule/Clash/Copilot.yaml",
+      "remote": "rule/Clash/Copilot/Copilot.yaml"
+    },
+    {
+      "local": "rule/Surge/Copilot.list",
+      "remote": "rule/Surge/Copilot/Copilot.list"
+    },
+    {
+      "local": "rule/Clash/AI.yaml",
+      "name": "AI",
+      "remotes": [
+        "rule/Clash/OpenAI/OpenAI.yaml",
+        "rule/Clash/Claude/Claude.yaml",
+        "rule/Clash/Anthropic/Anthropic.yaml",
+        "rule/Clash/Gemini/Gemini.yaml",
+        "rule/Clash/BardAI/BardAI.yaml",
+        "rule/Clash/Copilot/Copilot.yaml"
+      ],
+      "overlay": "source/overlays/AI.txt",
+      "note": "OpenAI+Claude+Gemini+Copilot 聚合，叠加 Cursor/Grok"
+    },
+    {
+      "local": "rule/Surge/AI.list",
+      "name": "AI",
+      "remotes": [
+        "rule/Surge/OpenAI/OpenAI.list",
+        "rule/Surge/Claude/Claude.list",
+        "rule/Surge/Anthropic/Anthropic.list",
+        "rule/Surge/Gemini/Gemini.list",
+        "rule/Surge/BardAI/BardAI.list",
+        "rule/Surge/Copilot/Copilot.list"
+      ],
+      "overlay": "source/overlays/AI.txt",
+      "note": "OpenAI+Claude+Gemini+Copilot 聚合，叠加 Cursor/Grok"
+    },
+    {
+      "local": "rule/Clash/Amazon.yaml",
+      "remote": "rule/Clash/Amazon/Amazon.yaml"
+    },
+    {
+      "local": "rule/Surge/Amazon.list",
+      "remote": "rule/Surge/Amazon/Amazon.list"
+    },
+    {
+      "local": "rule/Clash/AmazonPrimeVideo.yaml",
+      "remote": "rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml"
+    },
+    {
+      "local": "rule/Surge/AmazonPrimeVideo.list",
+      "remote": "rule/Surge/AmazonPrimeVideo/AmazonPrimeVideo.list"
+    },
+    {
+      "local": "rule/Clash/PrimeVideo.yaml",
+      "remote": "rule/Clash/PrimeVideo/PrimeVideo.yaml"
+    },
+    {
+      "local": "rule/Surge/PrimeVideo.list",
+      "remote": "rule/Surge/PrimeVideo/PrimeVideo.list"
+    },
+    {
+      "local": "rule/Clash/Hulu.yaml",
+      "remote": "rule/Clash/Hulu/Hulu.yaml"
+    },
+    {
+      "local": "rule/Surge/Hulu.list",
+      "remote": "rule/Surge/Hulu/Hulu.list"
+    },
+    {
+      "local": "rule/Clash/HuluUSA.yaml",
+      "remote": "rule/Clash/HuluUSA/HuluUSA.yaml"
+    },
+    {
+      "local": "rule/Surge/HuluUSA.list",
+      "remote": "rule/Surge/HuluUSA/HuluUSA.list"
+    },
+    {
+      "local": "rule/Clash/ParamountPlus.yaml",
+      "remote": "rule/Clash/ParamountPlus/ParamountPlus.yaml"
+    },
+    {
+      "local": "rule/Surge/ParamountPlus.list",
+      "remote": "rule/Surge/ParamountPlus/ParamountPlus.list"
+    },
+    {
+      "local": "rule/Clash/DiscoveryPlus.yaml",
+      "remote": "rule/Clash/DiscoveryPlus/DiscoveryPlus.yaml"
+    },
+    {
+      "local": "rule/Surge/DiscoveryPlus.list",
+      "remote": "rule/Surge/DiscoveryPlus/DiscoveryPlus.list"
+    },
+    {
+      "local": "rule/Clash/Alibaba.yaml",
+      "remote": "rule/Clash/Alibaba/Alibaba.yaml"
+    },
+    {
+      "local": "rule/Surge/Alibaba.list",
+      "remote": "rule/Surge/Alibaba/Alibaba.list"
+    },
+    {
+      "local": "rule/Clash/AliPay.yaml",
+      "remote": "rule/Clash/AliPay/AliPay.yaml"
+    },
+    {
+      "local": "rule/Surge/AliPay.list",
+      "remote": "rule/Surge/AliPay/AliPay.list"
+    },
+    {
+      "local": "rule/Clash/Tencent.yaml",
+      "remote": "rule/Clash/Tencent/Tencent.yaml"
+    },
+    {
+      "local": "rule/Surge/Tencent.list",
+      "remote": "rule/Surge/Tencent/Tencent.list"
+    },
+    {
+      "local": "rule/Clash/TencentVideo.yaml",
+      "remote": "rule/Clash/TencentVideo/TencentVideo.yaml"
+    },
+    {
+      "local": "rule/Surge/TencentVideo.list",
+      "remote": "rule/Surge/TencentVideo/TencentVideo.list"
+    },
+    {
+      "local": "rule/Clash/Huawei.yaml",
+      "remote": "rule/Clash/Huawei/Huawei.yaml"
+    },
+    {
+      "local": "rule/Surge/Huawei.list",
+      "remote": "rule/Surge/Huawei/Huawei.list"
+    },
+    {
+      "local": "rule/Clash/ByteDance.yaml",
+      "remote": "rule/Clash/ByteDance/ByteDance.yaml"
+    },
+    {
+      "local": "rule/Surge/ByteDance.list",
+      "remote": "rule/Surge/ByteDance/ByteDance.list"
+    },
+    {
+      "local": "rule/Clash/Baidu.yaml",
+      "remote": "rule/Clash/Baidu/Baidu.yaml"
+    },
+    {
+      "local": "rule/Surge/Baidu.list",
+      "remote": "rule/Surge/Baidu/Baidu.list"
+    },
+    {
+      "local": "rule/Clash/BiliBili.yaml",
+      "remote": "rule/Clash/BiliBili/BiliBili.yaml"
+    },
+    {
+      "local": "rule/Surge/BiliBili.list",
+      "remote": "rule/Surge/BiliBili/BiliBili.list"
+    },
+    {
+      "local": "rule/Clash/iQIYI.yaml",
+      "remote": "rule/Clash/iQIYI/iQIYI.yaml"
+    },
+    {
+      "local": "rule/Surge/iQIYI.list",
+      "remote": "rule/Surge/iQIYI/iQIYI.list"
+    },
+    {
+      "local": "rule/Clash/Youku.yaml",
+      "remote": "rule/Clash/Youku/Youku.yaml"
+    },
+    {
+      "local": "rule/Surge/Youku.list",
+      "remote": "rule/Surge/Youku/Youku.list"
+    },
+    {
+      "local": "rule/Clash/Migu.yaml",
+      "remote": "rule/Clash/Migu/Migu.yaml"
+    },
+    {
+      "local": "rule/Surge/Migu.list",
+      "remote": "rule/Surge/Migu/Migu.list"
+    },
+    {
+      "local": "rule/Clash/JingDong.yaml",
+      "remote": "rule/Clash/JingDong/JingDong.yaml"
+    },
+    {
+      "local": "rule/Surge/JingDong.list",
+      "remote": "rule/Surge/JingDong/JingDong.list"
+    },
+    {
+      "local": "rule/Clash/NetEase.yaml",
+      "remote": "rule/Clash/NetEase/NetEase.yaml"
+    },
+    {
+      "local": "rule/Surge/NetEase.list",
+      "remote": "rule/Surge/NetEase/NetEase.list"
+    },
+    {
+      "local": "rule/Clash/XiaoMi.yaml",
+      "remote": "rule/Clash/XiaoMi/XiaoMi.yaml"
+    },
+    {
+      "local": "rule/Surge/XiaoMi.list",
+      "remote": "rule/Surge/XiaoMi/XiaoMi.list"
+    },
+    {
+      "local": "rule/Clash/OPPO.yaml",
+      "remote": "rule/Clash/OPPO/OPPO.yaml"
+    },
+    {
+      "local": "rule/Surge/OPPO.list",
+      "remote": "rule/Surge/OPPO/OPPO.list"
+    },
+    {
+      "local": "rule/Clash/Vivo.yaml",
+      "remote": "rule/Clash/Vivo/Vivo.yaml"
+    },
+    {
+      "local": "rule/Surge/Vivo.list",
+      "remote": "rule/Surge/Vivo/Vivo.list"
+    },
+    {
+      "local": "rule/Clash/DingTalk.yaml",
+      "remote": "rule/Clash/DingTalk/DingTalk.yaml"
+    },
+    {
+      "local": "rule/Surge/DingTalk.list",
+      "remote": "rule/Surge/DingTalk/DingTalk.list"
+    },
+    {
+      "local": "rule/Clash/DouYin.yaml",
+      "remote": "rule/Clash/DouYin/DouYin.yaml"
+    },
+    {
+      "local": "rule/Surge/DouYin.list",
+      "remote": "rule/Surge/DouYin/DouYin.list"
+    },
+    {
+      "local": "rule/Clash/KuaiShou.yaml",
+      "remote": "rule/Clash/KuaiShou/KuaiShou.yaml"
+    },
+    {
+      "local": "rule/Surge/KuaiShou.list",
+      "remote": "rule/Surge/KuaiShou/KuaiShou.list"
+    },
+    {
+      "local": "rule/Clash/XiaoHongShu.yaml",
+      "remote": "rule/Clash/XiaoHongShu/XiaoHongShu.yaml"
+    },
+    {
+      "local": "rule/Surge/XiaoHongShu.list",
+      "remote": "rule/Surge/XiaoHongShu/XiaoHongShu.list"
+    },
+    {
+      "local": "rule/Clash/Weibo.yaml",
+      "remote": "rule/Clash/Weibo/Weibo.yaml"
+    },
+    {
+      "local": "rule/Surge/Weibo.list",
+      "remote": "rule/Surge/Weibo/Weibo.list"
+    },
+    {
+      "local": "rule/Clash/Facebook.yaml",
+      "remote": "rule/Clash/Facebook/Facebook.yaml"
+    },
+    {
+      "local": "rule/Surge/Facebook.list",
+      "remote": "rule/Surge/Facebook/Facebook.list"
+    },
+    {
+      "local": "rule/Clash/Instagram.yaml",
+      "remote": "rule/Clash/Instagram/Instagram.yaml"
+    },
+    {
+      "local": "rule/Surge/Instagram.list",
+      "remote": "rule/Surge/Instagram/Instagram.list"
+    },
+    {
+      "local": "rule/Clash/Threads.yaml",
+      "remote": "rule/Clash/Threads/Threads.yaml"
+    },
+    {
+      "local": "rule/Surge/Threads.list",
+      "remote": "rule/Surge/Threads/Threads.list"
+    },
+    {
+      "local": "rule/Clash/Snap.yaml",
+      "remote": "rule/Clash/Snap/Snap.yaml"
+    },
+    {
+      "local": "rule/Surge/Snap.list",
+      "remote": "rule/Surge/Snap/Snap.list"
+    },
+    {
+      "local": "rule/Clash/Line.yaml",
+      "remote": "rule/Clash/Line/Line.yaml"
+    },
+    {
+      "local": "rule/Surge/Line.list",
+      "remote": "rule/Surge/Line/Line.list"
+    },
+    {
+      "local": "rule/Clash/Reddit.yaml",
+      "remote": "rule/Clash/Reddit/Reddit.yaml"
+    },
+    {
+      "local": "rule/Surge/Reddit.list",
+      "remote": "rule/Surge/Reddit/Reddit.list"
+    },
+    {
+      "local": "rule/Clash/TikTok.yaml",
+      "remote": "rule/Clash/TikTok/TikTok.yaml"
+    },
+    {
+      "local": "rule/Surge/TikTok.list",
+      "remote": "rule/Surge/TikTok/TikTok.list"
+    },
+    {
+      "local": "rule/Clash/LinkedIn.yaml",
+      "remote": "rule/Clash/LinkedIn/LinkedIn.yaml"
+    },
+    {
+      "local": "rule/Surge/LinkedIn.list",
+      "remote": "rule/Surge/LinkedIn/LinkedIn.list"
+    }
   ]
 }

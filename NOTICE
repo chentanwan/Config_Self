@@ -15,3 +15,7 @@ We do not produce the original datasets. This repo:
 Custom Disney+ login/watch lists under rule/Surge/Disneyplus.list and
 rule/Surge/DisneyPlus_dl.list are local files and are not overwritten
 by the upstream sync.
+
+Local overlay-only sets (Web3) and extra domains (Crypto / AI / HBO)
+live in source/overlays/. They are personal additions, not upstream
+datasets.

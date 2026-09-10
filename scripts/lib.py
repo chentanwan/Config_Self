@@ -121,13 +121,22 @@ def counts(rules: list[tuple[str, str]]) -> Counter:
     return c
 
 
-def format_header(name: str, updated: str | None, overlay: str | None, rules: list[tuple[str, str]], extra_notes: list[str] | None = None) -> str:
+def format_header(
+    name: str,
+    updated: str | None,
+    overlay: str | None,
+    rules: list[tuple[str, str]],
+    extra_notes: list[str] | None = None,
+    *,
+    author: str = "blackmatrix7",
+    repo: str = "https://github.com/blackmatrix7/ios_rule_script",
+) -> str:
     c = counts(rules)
     lines = [
         f"# NAME: {name}",
-        "# AUTHOR: blackmatrix7",
-        "# REPO: https://github.com/blackmatrix7/ios_rule_script",
-        f"# MIRROR: https://github.com/chentanwan/Config_Self",
+        f"# AUTHOR: {author}",
+        f"# REPO: {repo}",
+        "# MIRROR: https://github.com/chentanwan/Config_Self",
     ]
     if updated:
         lines.append(f"# UPDATED: {updated}")

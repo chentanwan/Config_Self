@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import os
 import sys
 import urllib.error
 import urllib.request
@@ -26,6 +25,8 @@ from lib import (  # noqa: E402
 )
 
 UA = {"User-Agent": "Config_Self-sync/1.0 (+https://github.com/chentanwan/Config_Self)"}
+UPSTREAM_REPO = "https://github.com/blackmatrix7/ios_rule_script"
+MIRROR_REPO = "https://github.com/chentanwan/Config_Self"
 
 
 def fetch(url: str, timeout: int = 180) -> str:
@@ -48,21 +49,47 @@ def write_if_changed(path: Path, content: str) -> bool:
     return True
 
 
+def remotes_of(item: dict) -> list[str]:
+    if item.get("remotes"):
+        return list(item["remotes"])
+    if item.get("remote"):
+        return [item["remote"]]
+    return []
+
+
 def sync_one(item: dict, base: str, dry_run: bool) -> tuple[str, str]:
     local = ROOT / item["local"]
-    url = base.rstrip("/") + "/" + item["remote"]
-    text = fetch(url)
-    header, body = split_header_body(text)
+    remotes = remotes_of(item)
     clash = is_clash(item["local"])
-    rules = parse_rules(body, clash=clash)
-    if not rules:
-        # some files (e.g. custom Disney) aren't fetched this way
-        raise SystemExit(f"no rules parsed from {url}")
+    rules: list[tuple[str, str]] = []
+    extra_notes: list[str] = []
+    updated: str | None = None
+    name = item.get("name") or Path(item["local"]).stem
+    first_name: str | None = None
 
-    overlay_rel = item.get("overlay")
-    extra_notes = []
     if item.get("note"):
         extra_notes.append(f"# NOTE: {item['note']}")
+    if len(remotes) > 1:
+        extra_notes.append("# UPSTREAM: " + ", ".join(remotes))
+
+    for remote in remotes:
+        url = base.rstrip("/") + "/" + remote
+        text = fetch(url)
+        header, body = split_header_body(text)
+        part = parse_rules(body, clash=is_clash(remote))
+        if not part:
+            raise SystemExit(f"no rules parsed from {url}")
+        rules = merge_rules(rules, part)
+        u = extract_updated(header)
+        if u and (updated is None or u > updated):
+            updated = u
+        if first_name is None:
+            first_name = extract_name(header, name)
+
+    if remotes and not item.get("name") and first_name:
+        name = first_name
+
+    overlay_rel = item.get("overlay")
     if overlay_rel:
         extra = load_overlay(ROOT / overlay_rel)
         before = len(rules)
@@ -71,9 +98,20 @@ def sync_one(item: dict, base: str, dry_run: bool) -> tuple[str, str]:
             f"# OVERLAY-ADDED: {len(rules) - before} rule(s) from {overlay_rel}"
         )
 
-    name = extract_name(header, Path(item["local"]).stem)
-    updated = extract_updated(header)
-    hdr = format_header(name, updated, overlay_rel, rules, extra_notes)
+    if not rules:
+        raise SystemExit(f"no rules produced for {item['local']}")
+
+    author = "blackmatrix7" if remotes else "Config_Self"
+    repo = UPSTREAM_REPO if remotes else MIRROR_REPO
+    hdr = format_header(
+        name,
+        updated,
+        overlay_rel,
+        rules,
+        extra_notes,
+        author=author,
+        repo=repo,
+    )
     content = render_clash(hdr, rules) if clash else render_surge(hdr, rules)
 
     if dry_run:
