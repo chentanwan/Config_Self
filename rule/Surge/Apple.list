@@ -2,7 +2,7 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # MIRROR: https://github.com/chentanwan/Config_Self
-# UPDATED: 2026-09-10 04:18:50
+# UPDATED: 2026-09-18 04:52:04
 # DOMAIN-KEYWORD: 7
 # IP-CIDR6: 3
 # IP-CIDR: 10
@@ -48,9 +48,9 @@ USER-AGENT,locationd*
 USER-AGENT,passd*
 USER-AGENT,Music*
 USER-AGENT,AppleNews*
-USER-AGENT,AppleTV*
 USER-AGENT,com.apple.news*
 USER-AGENT,com.apple.trustd*
+USER-AGENT,AppleTV*
 USER-AGENT,com.apple.tv*
 PROCESS-NAME,CoreLocationAgent
 PROCESS-NAME,WeatherWidget

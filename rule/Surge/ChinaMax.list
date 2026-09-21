@@ -2,28 +2,27 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # MIRROR: https://github.com/chentanwan/Config_Self
-# UPDATED: 2026-09-14 04:10:06
+# UPDATED: 2026-09-20 03:55:59
 # DOMAIN-KEYWORD: 13
 # DOMAIN-SUFFIX: 51
-# IP-CIDR6: 4222
+# IP-CIDR6: 4221
 # IP-CIDR: 8247
 # IP-ASN: 1
 # PROCESS-NAME: 12
 # USER-AGENT: 61
-# TOTAL: 12607
+# TOTAL: 12606
 DOMAIN-SUFFIX,alipay
-DOMAIN-SUFFIX,alibaba
-DOMAIN-SUFFIX,taobao
-DOMAIN-SUFFIX,tmall
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,ms
+DOMAIN-SUFFIX,alibaba
 DOMAIN-SUFFIX,anquan
 DOMAIN-SUFFIX,baidu
 DOMAIN-SUFFIX,citic
-DOMAIN-SUFFIX,icbc
 DOMAIN-SUFFIX,shouji
 DOMAIN-SUFFIX,sina
 DOMAIN-SUFFIX,sohu
+DOMAIN-SUFFIX,taobao
+DOMAIN-SUFFIX,tmall
 DOMAIN-SUFFIX,unicom
 DOMAIN-SUFFIX,wang
 DOMAIN-SUFFIX,weibo
@@ -62,6 +61,7 @@ DOMAIN-SUFFIX,xn--vuq861b
 DOMAIN-SUFFIX,xn--xhq521b
 DOMAIN-SUFFIX,xn--zfr164b
 DOMAIN-SUFFIX,yun
+DOMAIN-SUFFIX,icbc
 DOMAIN-KEYWORD,.tmall.com
 DOMAIN-KEYWORD,alicdn
 DOMAIN-KEYWORD,alipay
@@ -3762,14 +3762,12 @@ IP-CIDR,154.19.85.0/24,no-resolve
 IP-CIDR,154.19.86.0/23,no-resolve
 IP-CIDR,154.19.88.0/21,no-resolve
 IP-CIDR,154.19.96.0/19,no-resolve
-IP-CIDR,154.197.128.0/17,no-resolve
 IP-CIDR,154.209.251.0/24,no-resolve
 IP-CIDR,154.36.92.0/23,no-resolve
 IP-CIDR,154.72.44.0/24,no-resolve
 IP-CIDR,154.72.47.0/24,no-resolve
 IP-CIDR,154.8.128.0/17,no-resolve
 IP-CIDR,154.8.48.0/20,no-resolve
-IP-CIDR,154.84.180.0/24,no-resolve
 IP-CIDR,154.89.32.0/20,no-resolve
 IP-CIDR,155.102.0.0/16,no-resolve
 IP-CIDR,155.126.176.0/23,no-resolve
@@ -3794,10 +3792,10 @@ IP-CIDR,156.109.34.0/31,no-resolve
 IP-CIDR,156.109.34.3/32,no-resolve
 IP-CIDR,156.109.34.4/30,no-resolve
 IP-CIDR,156.154.62.0/23,no-resolve
-IP-CIDR,156.224.128.0/17,no-resolve
 IP-CIDR,156.227.239.0/24,no-resolve
 IP-CIDR,156.232.10.0/23,no-resolve
 IP-CIDR,156.232.9.0/24,no-resolve
+IP-CIDR,156.239.237.0/24,no-resolve
 IP-CIDR,156.251.144.0/20,no-resolve
 IP-CIDR,156.251.161.0/24,no-resolve
 IP-CIDR,156.251.162.0/23,no-resolve
@@ -7300,8 +7298,7 @@ IP-CIDR,38.181.40.0/21,no-resolve
 IP-CIDR,38.181.48.0/20,no-resolve
 IP-CIDR,38.196.176.0/24,no-resolve
 IP-CIDR,38.226.199.0/24,no-resolve
-IP-CIDR,38.247.24.0/23,no-resolve
-IP-CIDR,38.247.27.0/24,no-resolve
+IP-CIDR,38.247.24.0/22,no-resolve
 IP-CIDR,38.247.32.0/24,no-resolve
 IP-CIDR,38.247.34.0/23,no-resolve
 IP-CIDR,38.247.36.0/24,no-resolve
@@ -7337,7 +7334,10 @@ IP-CIDR,38.60.143.0/24,no-resolve
 IP-CIDR,38.60.144.0/23,no-resolve
 IP-CIDR,38.60.214.0/32,no-resolve
 IP-CIDR,38.94.110.99/32,no-resolve
-IP-CIDR,38.95.112.0/20,no-resolve
+IP-CIDR,38.95.112.0/22,no-resolve
+IP-CIDR,38.95.117.0/24,no-resolve
+IP-CIDR,38.95.118.0/23,no-resolve
+IP-CIDR,38.95.120.0/21,no-resolve
 IP-CIDR,38.95.232.0/23,no-resolve
 IP-CIDR,39.0.0.0/24,no-resolve
 IP-CIDR,39.0.128.0/17,no-resolve
@@ -11046,6 +11046,7 @@ IP-CIDR6,2610:a1:3078::/46,no-resolve
 IP-CIDR6,2620:171:32::/48,no-resolve
 IP-CIDR6,2620:171:5a:f0::/64,no-resolve
 IP-CIDR6,2620:171:fb::/48,no-resolve
+IP-CIDR6,2620:57:4004::/47,no-resolve
 IP-CIDR6,2804:1e48:9002::/48,no-resolve
 IP-CIDR6,2a00:79e0:200:500::/56,no-resolve
 IP-CIDR6,2a00:79e0:ffe5:3a00::/56,no-resolve
@@ -12512,9 +12513,7 @@ IP-CIDR6,2c0f:f7a8:805f::/48,no-resolve
 IP-CIDR6,2c0f:f7a8:8150::/48,no-resolve
 IP-CIDR6,2c0f:f7a8:815f::/48,no-resolve
 IP-CIDR6,2c0f:f7a8:8211::/48,no-resolve
-IP-CIDR6,2c0f:f7a8:9020::/48,no-resolve
 IP-CIDR6,2c0f:f7a8:9041::/48,no-resolve
-IP-CIDR6,2c0f:f7a8:9220::/48,no-resolve
 IP-CIDR6,::ffff:113.248.172.245/128,no-resolve
 IP-CIDR6,::ffff:114.235.96.186/128,no-resolve
 IP-CIDR6,::ffff:115.236.128.112/128,no-resolve
@@ -12582,30 +12581,30 @@ USER-AGENT,eusoft_ting_en_iphone
 USER-AGENT,hearthstone*
 USER-AGENT,hide*
 USER-AGENT,ting_en
+USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90
 USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*
 USER-AGENT,*QIYI*
 USER-AGENT,DomesticMedia*
 USER-AGENT,MGTV*
-USER-AGENT,MOO%E9%9F%B3%E4%B9%90*
 USER-AGENT,MOO*
+USER-AGENT,MiguVideo*
 USER-AGENT,PPStream*
 USER-AGENT,QIYI*
-USER-AGENT,QQ%E9%9F%B3%E4%B9%90
 USER-AGENT,QQ%e9%9f%b3%e4%b9%90*
 USER-AGENT,QQMusic*
 USER-AGENT,QYPlayer*
-USER-AGENT,TencentMidasConnect*
 USER-AGENT,Youku*
+USER-AGENT,baiduyinyue
 USER-AGENT,iQiYi*
-USER-AGENT,live4iphone*
-USER-AGENT,qqlive4iphone*
 USER-AGENT,walkman*
 USER-AGENT,xiami*
 USER-AGENT,Himalaya*
-USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91
-USER-AGENT,MiguVideo*
-USER-AGENT,baiduyinyue
+USER-AGENT,TencentMidasConnect*
+USER-AGENT,MOO%E9%9F%B3%E4%B9%90*
+USER-AGENT,QQ%E9%9F%B3%E4%B9%90
+USER-AGENT,live4iphone*
+USER-AGENT,qqlive4iphone*
 PROCESS-NAME,com.taobao.taobao
 PROCESS-NAME,com.bilibili.app.blue
 PROCESS-NAME,com.bilibili.app.in
